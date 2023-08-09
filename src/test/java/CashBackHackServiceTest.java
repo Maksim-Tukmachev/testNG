@@ -1,11 +1,11 @@
 package ru.netology.maven;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CashBackHackServiceTest {
     @Test
-    void onLimit() {
+    public void onLimit() {
         CashBackHackService service = new CashBackHackService();
         int amount = 1000;
 
@@ -15,7 +15,7 @@ public class CashBackHackServiceTest {
     }
 
     @Test
-    void underLimit() {
+    public void underLimit() {
         CashBackHackService service = new CashBackHackService();
         int amount = 900;
 
@@ -25,7 +25,7 @@ public class CashBackHackServiceTest {
     }
 
     @Test
-    void secondBonus() {
+    public void secondBonus() {
         CashBackHackService service = new CashBackHackService();
         int amount = 1900;
 
